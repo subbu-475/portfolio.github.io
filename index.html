@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subbu's Portfolio</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="https://kit.fontawesome.com/dad75d5417.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div>
+                    <img id="www" src="./icons/world-wide-web.ico">
+                    <p id="full-l"><span id="first-l">S</span>ubbu.</p>
+                </div>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="./icons/close.ico" id="close-ico" class="fa-regular fa-circle-xmark" onclick="closemenu()">
+                </ul>
+                <img src="./icons/hamburger.ico" class="fa-solid fa-bars fas" onclick="openmenu()">
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hi, I'm <span>Subramani</span> <br>from Trichy</h1>
+            </div>
+        </div>
+    </div>
+    <!--about section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="about-para">I am a working professional. I'm much more interested in website development and programming. Through the courses, I have gained a lot of knowledges about web development and the Python programming language. I am putting a lot of effort into my passion for web development <span><img src="./icons/heart.ico" id="heart-icon"></span> and programming.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Design Frontend</span><br>Design a for webpage using frontend tools.</li>
+                            <li><span>Web development Backend</span><br>Developing a web page backend using appropriate tools.</li>
+                            <li><span>Python Developer</span><br>Developing a application using python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Team Lead</span><br>Team Lead in DSM Soft Pvt.Ltd in Trichy. (2019-present)<br> Working with Australian project. In this project capturing
+                                the plans of lands and buildings with the help of the PDF
+                                drawing using Qgis software. My role is Leading the team
+                                with instructions as needed.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span id="cur">B.E.(CSE)</span><br>currently studying BE CSC in Oxford Engineering College (2023-2026)<br>Trichy. </li>
+                            <li><span>Diploma in Mechanical Engineering (2013-2016)</span><br>Government Polytechnic College,Trichy.<br>First class with Distinction with 89%</li>
+                            <li><span>SSLC (2012-2013)</span><br>Boiler Plant Boys Higher Secondary School,Trichy.<br>with 93.2% of marks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <img src="./icons/frontend.ico" class="fa-solid fa-code">
+                    <h2>web design Frontend</h2>
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="./icons/html.ico" class="allign-img ">
+                                <p class="skill-align">HTML</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./icons/css.ico" class="allign-img">
+                                <p class="skill-align">CSS</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./icons/js.ico" class="js-img allign-img">
+                                <p class="skill-align">Javascript</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./icons/jquery.ico" class="js-img allign-img">
+                                <p class="skill-align">jQuery</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./icons/bootstrap.ico" class="js-img allign-img">
+                                <p class="skill-align">Bootstrap</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div>
+                    <img src="./icons/backend.ico" class="fa-solid fa-crop">
+                    <h2>web development Backend</h2>
+                    <ul>
+                        <li>Nodejs</li>
+                        <li>Express js</li>
+                        <li>MySql</li>
+                        <li>Mongo DB</li>
+                        <li>API</li>
+                    </ul>
+        
+                </div>
+                <div>
+                    <img src="./icons/python.ico" id="py-ico">
+                    <h2>Python Developer</h2>
+                    <p id="python-desc">I have much more knowledge about python programming<br>
+                        and completed python course. Make application with tkinter is my best.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/age cal.jpg">
+                    <div class="layer">
+                        <h3>Age calculator</h3>
+                        <p>Which shows a age of the perston till now<br>as per entered birth date and time.</p>
+                        <a href="./projects/Age calculator/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/drumkit.png">
+                    <div class="layer">
+                        <h3>Drum kit project</h3>
+                        <p>In this project, the keys you pressed will produced appropriate sound<br>which mentioned in the image. </p>
+                        <a href="./projects/Drum Kit Starting Files/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/dice.png">
+                    <div class="layer">
+                        <h3>Dice game project</h3>
+                        <p>In this project, show two players were participated in the game.<br>while we refresh,the dice also refreshed and announce who is the winner.</p>
+                        <a href="./projects/Dicee Challenge - Starting Files/dicee.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="details1">
+            <div class="contact-left">
+                <h1 class="sub-title">contact Me</h1>
+                <p class="text"><img src="./icons/message1.ico" class="fa-solid fa-paper-plane plane">subbudme475@gmail.com</p>
+                <p class="text"><img src="./icons/call.ico" class="fa-solid fa-phone plane">9159029499</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./icons/facebook.ico" class="fa-brands fa-facebook"></a>
+                    <a href="#"><img src="./icons/linkedin.ico" class="fa-brands fa-linkedin"></a>
+                    <a href="#"><img src="./icons/github.ico" class="fa-brands fa-github"></a>
+                </div>
+                <a href="./CV/Subramani's Resume_13.06.2023.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Subbu </p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+<script>
+    var sidemenu=document.getElementById("side-menu");
+    function openmenu() {
+        sidemenu.style.right="0";
+    }
+    function closemenu() {
+        sidemenu.style.right="-200px";
+    }
+</script> 
+</body>
+</html>
